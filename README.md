@@ -127,6 +127,23 @@ netsuite.deploy=
 
 ![Demo Index](images/demo-main-page.png)
 
+## About the flows
+
+**1. html-form-flow:** renders the HTML form with a `parseTemplate` component.
+
+![Flow HMTL Form](images/html-form-flow.png)
+
+**2. restletGet:** calls the GET function of a RESTlet.
+
+![Flow HMTL Form](images/restletGet.png)
+
+**3. restletPost:** calls the POST function of a RESTlet.
+
+![Flow Processor 1](images/restletPost.png)
+
+**4. restletDelete:** calls the DELETE function of a RESTlet.
+
+![Flow Processor 1](images/restletDelete.png)
 
 ## How To Run the Demo
 
