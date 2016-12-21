@@ -92,14 +92,8 @@ function deleteRecord(datain)
 
 * Go to **File > Import**
 * Select **Anypoint Studio Project from External Location** (under the parent folder "Anypoint Studio")
-
-![Import Menu](images/demo-import-menu.png)
-
 * Provide the root path to the demo project folder.
 * Select **Mule Runtime (3.5.x EE)** or greater.
-
-![File Selection](images/demo-import-file.png)
-
 * Click **Finish**.  
 * Configure the credentials, as well as the deployed script and deploy IDs, inside the file `src/main/app/mule-app.properties`.
 
