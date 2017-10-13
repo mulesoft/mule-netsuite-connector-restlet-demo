@@ -1,0 +1,19 @@
+{
+  "domain": "default",
+  "configs": [
+    "demo-restlet.xml"
+  ],
+  "redeploymentEnabled": true,
+  "name": "demo-restlet",
+  "minMuleVersion": "4.0.0-rc",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedResources": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
