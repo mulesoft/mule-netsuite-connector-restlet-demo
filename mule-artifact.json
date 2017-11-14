@@ -5,7 +5,8 @@
   ],
   "redeploymentEnabled": true,
   "name": "demo-restlet",
-  "minMuleVersion": "4.0.0-rc",
+  "minMuleVersion": "4.0.0-SNAPSHOT",
+  "requiredProduct": "MULE_EE",
   "classLoaderModelLoaderDescriptor": {
     "id": "mule",
     "attributes": {
