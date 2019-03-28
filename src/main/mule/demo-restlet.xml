@@ -13,7 +13,12 @@ http://www.mulesoft.org/schema/mule/netsuite http://www.mulesoft.org/schema/mule
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<netsuite:rest-config name="NetSuite_Rest_config" doc:name="NetSuite Rest config" doc:id="465caa2f-0d9c-4aea-8747-dc199c95ebcf" >
-		<netsuite:restlet-login-connection email="${netsuite.email}" password="${netsuite.password}" account="${netsuite.account}" roleId="${netsuite.roleId}" applicationId="${netsuite.applicationId}" />
+		<netsuite:restlet-token-connection
+				consumerKey="${netsuite.consumerKey}"
+				consumerSecret="${netsuite.consumerSecret}"
+				tokenId="${netsuite.tokenId}"
+				tokenSecret="${netsuite.tokenSecret}"
+				account="${netsuite.account}"/>
 	</netsuite:rest-config>
 	<flow name="html-form-flow">
         <http:listener config-ref="HTTP_Listener_config" path="/" doc:name="/"/>
@@ -53,7 +58,7 @@ output application/java
 payload]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
-        <netsuite:call-restlet-get config-ref="NetSuite_Rest_config" deploy="${netsuite.deploy}" script="${netsuite.script}" doc:name="NetSuite RESTlet (POST)"/>
+        <netsuite:call-restlet-post config-ref="NetSuite_Rest_config" deploy="${netsuite.deploy}" script="${netsuite.script}" doc:name="NetSuite RESTlet (POST)"/>
         <ee:transform doc:name="to JSON" doc:id="da85cfe7-cf70-4c50-9416-a517754810c8" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
