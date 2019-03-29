@@ -10,8 +10,8 @@ The aim of this demo is to show the user how to call RESTlets deployed in their 
 ## Pre-Requisites
 
 * Java 8
-* Anypoint Studio 7.0.x
-* Mule Runtime 4.0.x EE
+* Anypoint Studio 7.x
+* Mule Runtime 4.x EE
 * DataWeave 2.0
 * Access to a NetSuite instance (credentials should be populated into the `mule-app.properties` file)
 
@@ -93,7 +93,7 @@ function deleteRecord(datain)
 * Go to **File > Import**
 * Select **Anypoint Studio Project from External Location** (under the parent folder "Anypoint Studio")
 * Provide the root path to the demo project folder.
-* Select **Mule Runtime (4.0.x EE)** or greater.
+* Select **Mule Runtime (4.x EE)**.
 * Click **Finish**.  
 * Configure the credentials, as well as the deployed script and deploy IDs, inside the file `src/main/resources/mule-app.properties`.
 
