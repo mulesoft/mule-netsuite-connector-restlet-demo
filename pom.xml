@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>com.mulesoft.connectors</groupId>
 			<artifactId>mule-netsuite-connector</artifactId>
-			<version>8.3.0</version>
+			<version>9.0.0</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
