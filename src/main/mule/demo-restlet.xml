@@ -18,7 +18,9 @@ http://www.mulesoft.org/schema/mule/netsuite http://www.mulesoft.org/schema/mule
 				consumerSecret="${netsuite.consumerSecret}"
 				tokenId="${netsuite.tokenId}"
 				tokenSecret="${netsuite.tokenSecret}"
-				account="${netsuite.account}"/>
+				account="${netsuite.account}"
+				readTimeout="${netsuite.readTimeout}"
+				connectionTimeout="${netsuite.connectTimeout}"/>
 	</netsuite:rest-config>
 	<flow name="html-form-flow">
         <http:listener config-ref="HTTP_Listener_config" path="/" doc:name="/"/>
